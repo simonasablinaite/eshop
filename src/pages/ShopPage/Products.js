@@ -27,14 +27,14 @@ const Products = () => {
 
             <div className='purchase'>
               <div className='price'>
-                <span>{product.price}</span>
+                <span>&euro; {product.price}</span>
               </div>
 
               <div className='ordered'>
 
-                <button>
+                <button className='btn'>
                   <img style={{ width: 25, height: 25 }} src={basketCart} alt="basket-cart" />
-                  Add to cart</button>
+                  Read more</button>
               </div>
             </div>
           </Link></li>

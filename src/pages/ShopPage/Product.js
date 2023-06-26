@@ -9,6 +9,9 @@ const Product = () => {
    const [product, setProduct] = useState(null);
    const [count, setCount] = useState(0);
 
+   let sum = 0;
+
+
    useEffect(() => {
       fetch(`${API_URL}/products/${id}`)
          .then(res => res.json())
@@ -20,14 +23,19 @@ const Product = () => {
    }
 
    const counterHandler = () => {
-      setCount(count + 1)
-
+      setCount(count + 1);
    }
+
+   const totalSum = (price) => {
+      sum += price * count
+   }
+
+
 
    return (
       <div className='product-info'>
          <div className='product-description-wrapper'>
-            <img style={{ width: '20%' }} src={product.photoURL} alt="flowers" />
+            <img className='product-img' src={product.photoURL} alt="flowers" />
             <h1>{product.title}</h1>
             <p className='product-description'>{product.body}</p>
          </div>
@@ -36,11 +44,17 @@ const Product = () => {
             <span className='product-price'>&euro; {product.price}</span>
             {/* <Link onClick={counterHandler} to='/order'> */}
 
-            <button onClick={counterHandler}>
+            <button className='btn' onClick={() => {
+               counterHandler();
+               totalSum(product.price)
+            }}>
                <img style={{ width: 25, height: 25 }} src={basketCart} alt="basket cart" />
                Add to cart
-               <span>{count}</span>
+               <span className='counter'>{count}</span>
+
             </button>
+
+            <span className='sum'>Total sum: {sum} &euro;</span>
 
             {/* </Link> */}
          </div>

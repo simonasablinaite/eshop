@@ -5,4 +5,6 @@
 
 // components
 @use './components/home-page/header';
-@use './components/home-page/shop-list';
+@use './components/shop/shop-list';
+@use './components/buttons/add-button';
+@use './components/shop/product';
