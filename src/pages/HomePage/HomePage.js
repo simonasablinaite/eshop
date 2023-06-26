@@ -1,5 +1,5 @@
 import React from 'react'
-import Products from '../../CRUD/POST/Products'
+import Products from '../ShopPage/Products'
 import '../../style/home.css';
 
 const HomePage = () => {

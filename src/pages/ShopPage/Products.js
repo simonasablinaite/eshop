@@ -19,7 +19,7 @@ const Products = () => {
       <ul className='product-card'>
         {products.map(product => <li key={product.id}>
 
-          <Link to='/product/:id'>
+          <Link to={`/products/${product.id}`}>
 
             <img style={{ width: 150, height: 180 }} src={product.photoURL} alt="flower" />
             <h2 className='product-title'>{product.title}</h2>
@@ -31,7 +31,7 @@ const Products = () => {
               </div>
               <div className='ordered'>
                 <img style={{ width: 25, height: 25 }} src={basketCart} alt="basket-cart" />
-                <Link to='/ordered'>Add to cart</Link>
+                <button>Add to cart</button>
               </div>
             </div>
           </Link></li>
