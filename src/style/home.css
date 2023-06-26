@@ -37,4 +37,42 @@ body * {
   flex-direction: column;
   align-items: center;
   color: white;
+}
+
+.shop-list {
+  padding: 20px;
+}
+.shop-list .product-card {
+  list-style-type: none;
+}
+.shop-list .product-card li {
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.shop-list .product-card li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-decoration: none;
+}
+.shop-list .product-card li a .product-title {
+  color: black;
+  margin: 10px 0;
+}
+.shop-list .product-card li a .product-description {
+  color: grey;
+  text-align: center;
+}
+.shop-list .product-card li .purchase {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  border: 1px solid grey;
+  align-items: center;
+}
+.shop-list .product-card li .purchase .price {
+  padding: 0 10px;
 }/*# sourceMappingURL=home.css.map */
