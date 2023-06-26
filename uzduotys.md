@@ -1,18 +1,19 @@
 1. Prekiu sarasas:
 
-- Preke: nuotrauka, title, description, price, add to card mygtukas.
+- Preke: nuotrauka, title, description, price, add to card mygtukas. DONE
 - Add to cart mygtuka pasalinti (kol kas)
-- Vietoje add to cart - read more (linkas i preke);
+- Vietoje add to cart - read more (linkas i preke); SUTVARKYTI LINKUS, DB BUTTONAS
 - Pagalvoti apie puslapiavima (ne dabar)
 
 2.  Prekes vidinis puslapis:
 
-- paspaudus mygtuka, galeti prideti i pirkiniu krepseli. Laukelis sumai apskaiciuoti;
+- paspaudus mygtuka, galeti prideti i pirkiniu krepseli. DONE
+- Laukelis sumai apskaiciuoti; DONE
 - paspaudus mygtuka, turi atnaujinti prekiu lista (order page)
 
 3. Order page:
 
-- Prekes atsivaizduoja preliu sarase: nuotrauka, prekiu kiekis, vieneto kaina, bendra suma,
+- Prekes atsivaizduoja prekiu sarase: nuotrauka, prekiu kiekis, vieneto kaina, bendra suma,
 - Mygtukas uzsakymui pateikti.
 - Prie prekiu saraso prideti mygtuka edit ir del
 - Edit ir del mugtukai fetcho kreipimasis i serva.
