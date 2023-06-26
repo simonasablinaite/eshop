@@ -29,9 +29,12 @@ const Products = () => {
               <div className='price'>
                 <span>{product.price}</span>
               </div>
+
               <div className='ordered'>
-                <img style={{ width: 25, height: 25 }} src={basketCart} alt="basket-cart" />
-                <button>Add to cart</button>
+
+                <button>
+                  <img style={{ width: 25, height: 25 }} src={basketCart} alt="basket-cart" />
+                  Add to cart</button>
               </div>
             </div>
           </Link></li>

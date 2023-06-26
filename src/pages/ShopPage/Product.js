@@ -7,6 +7,7 @@ const Product = () => {
 
    const { id } = useParams();
    const [product, setProduct] = useState(null);
+   const [count, setCount] = useState(0);
 
    useEffect(() => {
       fetch(`${API_URL}/products/${id}`)
@@ -18,6 +19,10 @@ const Product = () => {
       return '';
    }
 
+   const counterHandler = () => {
+      setCount(count + 1)
+
+   }
 
    return (
       <div className='product-info'>
@@ -29,10 +34,15 @@ const Product = () => {
 
          <div className='product-ordered-wrapper'>
             <span className='product-price'>&euro; {product.price}</span>
-            <Link to='/order-page'>
+            {/* <Link onClick={counterHandler} to='/order'> */}
+
+            <button onClick={counterHandler}>
                <img style={{ width: 25, height: 25 }} src={basketCart} alt="basket cart" />
                Add to cart
-            </Link>
+               <span>{count}</span>
+            </button>
+
+            {/* </Link> */}
          </div>
 
       </div>

@@ -3,6 +3,7 @@ import Products from './pages/ShopPage/Products';
 
 import HomePage from './pages/HomePage/HomePage';
 import Product from './pages/ShopPage/Product';
+import OrderPage from './pages/ShopPage/OrderPage';
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
           <nav className='navigation'>
             <NavLink className='nav-item' to='/'>Home Page</NavLink>
             <NavLink className='nav-item' to='/products'>Shop</NavLink>
+            <NavLink className='nav-item' to='/order'>Order</NavLink>
+
           </nav>
 
           <div className='logo-wrapper'>
@@ -29,6 +32,7 @@ function App() {
           <Route path='/products' element={<Products />}></Route>
           <Route path='/products/:id' element={<Product />} />
           <Route path='/' element={<HomePage />} />
+          <Route path='/order' element={<OrderPage />} />
 
         </Routes>
 
