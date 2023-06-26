@@ -1,11 +1,26 @@
 import './App.css';
+import { Routes, Route, NavLink } from 'react-router-dom';
+import Products from './CRUD/POST/Products';
+
 
 function App() {
   return (
-    <div className="App">
+    <>
+      <div className="App">
+        <header>
+          <nav className='navigation'>
+            <NavLink className='nav-item' to='json/products'>Shop</NavLink>
+          </nav>
+        </header>
 
-      <h1>Lets started!</h1>
-    </div>
+        <Routes>
+
+          <Route path='/json/products' element={<Products />}></Route>
+
+        </Routes>
+
+      </div>
+    </>
   );
 }
 
