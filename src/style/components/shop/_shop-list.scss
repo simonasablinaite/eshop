@@ -1,0 +1,45 @@
+.shop-list {
+display: flex; 
+
+.product-card {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+
+   li  {
+  display: flex;
+      border: 1px solid grey;
+      list-style-type: none;
+      width: 250px;
+      text-align: center;
+      padding: 20px;
+
+
+      a {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+         text-decoration: none;
+         color: black;
+         align-items: center;
+
+        .product-description {
+           color: grey;
+         }
+       }
+     }
+     .purchase {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+    
+      width: 100%;
+      border: 1px solid grey;
+   
+      .ordered {
+         border-left: 1px solid grey;
+      }
+      }
+  }
+}
+
+

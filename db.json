@@ -1,0 +1,70 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Hot Romance",
+      "body": "A bouquet of red roses accompanied by white statice. A bouquet wrapped to perfection and suitable for any occasions as red roses simply symbolizes your passion, true love and desire while leaving the white statice to portray your utmost sincerity. This is the go-to gift that expresses your love and intentions without having to say a word.",
+      "price": 50,
+      "photoURL": "https://cdn.shopify.com/s/files/1/2601/3352/products/4_1_70b7c2c2-66af-4ff2-8fc7-5576f1f9ef44_493x.jpg?v=1681954530"
+    },
+
+    {
+      "id": 2,
+      "title": "Ariana",
+      "body": "Wonderfully uplifting, our vibrant Ariana arrangement is the one that you need if you're looking to delightfully surprise a loved one! With hues of exuberant pinks and yellows, it is made complete with lively greens, thanks to its eucalyptus stems.",
+      "price": 25,
+      "photoURL": "https://cdn.shopify.com/s/files/1/2601/3352/products/BR_05_2_493x.jpg?v=1635434089"
+    },
+
+    {
+      "id": 3,
+      "title": "Bloom",
+      "body": "Get bloom-ed away with our specially curated hand bouquet.",
+      "price": 45,
+      "photoURL": "https://cdn.shopify.com/s/files/1/2601/3352/products/Bloom.JPG?v=1573806288"
+
+    },
+
+    {
+      "id": 4,
+      "title": "Golden Heart",
+      "body": "Deep red carnations, champagne-hued roses, vibrant amber carnation sprays and a stunning sunflower adorned in between. Express your love & cherishment with the perfect gift - made with love, for the woman with a Golden Heart, this Mother's Day.",
+      "price": 125,
+      "photoURL": "https://cdn.shopify.com/s/files/1/2601/3352/files/10a_3c3dd889-e54e-4197-8d46-5511a05c757c_493x.jpg?v=1684465257"
+    },
+
+    {
+      "id": 5,
+      "title": "Lilac You A Lot",
+      "body": "Beautiful bouquet hand wrapped to perfection. Perfect for all occasions.",
+      "price": 35,
+      "photoURL": "https://cdn.shopify.com/s/files/1/2601/3352/products/lilacyoualot_493x.jpg?v=1627278688"
+
+    },
+    {
+      "id": 6,
+      "title": "99 Roses - Expression of Love",
+      "body": "The Expression of Love is wrapped with different shades of pink and red roses. It is the best way to express your admiration and appreciation. Extend your heartfelt gratitude and thankfulness to your loved ones with this bouquet.",
+      "price": 170,
+    "photoURL": "https://cdn.shopify.com/s/files/1/2601/3352/products/99Roses-ExpressionofLove_001_493x.jpg?v=1626848478"
+    }
+
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

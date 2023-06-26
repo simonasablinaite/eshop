@@ -1,0 +1,6 @@
+@use './main/reset';
+@use './main/_variables.scss';
+
+// components
+@use './components/home-page/header';
+@use './components/shop/shop-list';
