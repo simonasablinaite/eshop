@@ -1,6 +1,8 @@
+@use '../main/variables';
+
 .header {
  background-color: #f1717a;
- padding: 20px;
+ padding: variables.$p-20;
 
  .nav-container {
    display: flex;
@@ -9,7 +11,7 @@
 
    .logo-wrapper {
       display: flex;
-      color: white;
+      color: variables.$main-text;
       flex-direction: column;
       text-align: center;
    }
@@ -19,9 +21,9 @@
 
     
     a {
-      color: white;
+      color: variables.$main-text;
       text-decoration: none;
-      font-size: 20px;
+      font-size: variables.$fs-20;
       font-weight: 600;
     }
    }
