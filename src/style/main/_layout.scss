@@ -1,5 +1,8 @@
-@media (max-width: 350px) {
-   .container {
-      width: 100%;
+@use '../components/shop/product';
+
+@media (max-width: 732px) {
+   .product-img {
+      width: 20px;
    }
 }
+

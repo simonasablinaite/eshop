@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+
 import { API_URL } from '../../config';
 import basketCart from '../../img/basket-cart-icon.png'
-
 
 const Products = () => {
 
@@ -27,7 +27,7 @@ const Products = () => {
 
             <div className='purchase'>
               <div className='price'>
-                <span>&euro; {product.price}</span>
+                <span className='product-price'>Price: &euro; {product.price}</span>
               </div>
 
               <div className='ordered'>
@@ -46,7 +46,3 @@ const Products = () => {
 }
 
 export default Products
-
-// issitraukiu tik pavadinima, taciau sukurusi visa koerteles stiliu, patalpinsiu visa informacija:
-// product.body
-// product.price

@@ -8,8 +8,8 @@ const Product = () => {
    const { id } = useParams();
    const [product, setProduct] = useState(null);
    const [count, setCount] = useState(0);
+   const [sum, setSum] = useState(0)
 
-   let sum = 0;
 
 
    useEffect(() => {
@@ -22,14 +22,10 @@ const Product = () => {
       return '';
    }
 
-   const counterHandler = () => {
+   const counterHandler = (price) => {
       setCount(count + 1);
+      setSum((count + 1) * price)
    }
-
-   const totalSum = (price) => {
-      sum += price * count
-   }
-
 
 
    return (
@@ -44,10 +40,7 @@ const Product = () => {
             <span className='product-price'>&euro; {product.price}</span>
             {/* <Link onClick={counterHandler} to='/order'> */}
 
-            <button className='btn' onClick={() => {
-               counterHandler();
-               totalSum(product.price)
-            }}>
+            <button className='btn' onClick={() => counterHandler(product.price)}>
                <img style={{ width: 25, height: 25 }} src={basketCart} alt="basket cart" />
                Add to cart
                <span className='counter'>{count}</span>

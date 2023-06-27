@@ -9,11 +9,6 @@ body * {
   width: 100%;
 }
 
-@media (max-width: 350px) {
-  .container {
-    width: 100%;
-  }
-}
 .header {
   background-color: #f26f79;
 }
@@ -95,6 +90,7 @@ body * {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  text-align: center;
 }
 .product-info .product-description-wrapper .product-img {
   display: flex;
@@ -119,4 +115,10 @@ body * {
 }
 .product-info .sum {
   font-size: 20px;
+}
+
+@media (max-width: 732px) {
+  .product-img {
+    width: 20px;
+  }
 }/*# sourceMappingURL=home.css.map */
