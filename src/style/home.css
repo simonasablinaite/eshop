@@ -29,4 +29,40 @@ body * {
   text-decoration: none;
   font-size: 20px;
   font-weight: 600;
+}
+
+.shop-list .product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+  list-style-type: none;
+  text-align: center;
+}
+.shop-list .product-card li {
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 20px;
+}
+.shop-list .product-card li a {
+  text-decoration: none;
+}
+.shop-list .product-card li a .product-title {
+  color: black;
+  margin: 10px 0;
+}
+.shop-list .product-card li a .product-description {
+  color: grey;
+  margin-bottom: 10px;
+}
+.shop-list .product-card li .purchase {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.shop-list .product-card li .purchase .price {
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
 }/*# sourceMappingURL=home.css.map */
