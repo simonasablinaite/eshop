@@ -8,8 +8,6 @@ import logo from './img/logo-2.png'
 
 function App() {
   return (
-
-
     <div className="container">
       <header className='header'>
         <div className='nav-container'>

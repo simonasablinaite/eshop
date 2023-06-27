@@ -1,0 +1,30 @@
+.header {
+ background-color: #f1717a;
+ padding: 20px;
+
+ .nav-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   .logo-wrapper {
+      display: flex;
+      color: white;
+      flex-direction: column;
+      text-align: center;
+   }
+   .navigation {
+      display: flex;
+      gap: 20px;
+
+    
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 600;
+    }
+   }
+ 
+ }
+}
