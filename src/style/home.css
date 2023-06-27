@@ -6,12 +6,13 @@ body * {
 }
 
 .header {
+  width: calc(100% - 60px);
   background-color: #f1717a;
   padding: 20px;
 }
 .header .nav-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .header .nav-container .logo-wrapper {
@@ -32,6 +33,7 @@ body * {
 }
 
 .shop-list .product-card {
+  width: calc(100% - 40px);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -40,6 +42,7 @@ body * {
   text-align: center;
 }
 .shop-list .product-card li {
+  width: calc(100% - 40px);
   border: 1px solid grey;
   border-radius: 10px;
   margin-top: 20px;
@@ -102,11 +105,42 @@ body * {
   font-weight: 600;
 }
 
+.hero {
+  width: calc(100% - 60px);
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  background: rgb(241, 103, 115);
+  background: radial-gradient(circle, rgb(241, 103, 115) 0%, rgb(223, 223, 223) 0%, rgb(241, 103, 115) 100%);
+}
+.hero .element-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  border: 1px solid white;
+}
+.hero .element-wrapper img {
+  position: relative;
+  left: 0px;
+}
+.hero .element-wrapper p {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 30px;
+  margin-left: 30px;
+}
+
 @media (min-width: 768px) {
   .shop-list .product-card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+  }
+  .hero .element-wrapper > p {
+    font-size: 25px;
+    line-height: 40px;
   }
 }
 @media (min-width: 992px) {
@@ -114,5 +148,9 @@ body * {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+  }
+  .hero .element-wrapper > p {
+    font-size: 45px;
+    line-height: 55px;
   }
 }/*# sourceMappingURL=home.css.map */

@@ -1,12 +1,13 @@
 @use '../main/variables';
 
 .header {
+  width: calc(100% - 60px);
  background-color: #f1717a;
  padding: variables.$p-20;
 
  .nav-container {
    display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
    align-items: center;
 
    .logo-wrapper {

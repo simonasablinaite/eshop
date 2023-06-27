@@ -1,15 +1,16 @@
 import React from 'react'
 import Products from '../ShopPage/Products'
 import '../../style/home.css';
+import Hero from '../../Components/Hero';
 
 
 const HomePage = () => {
    return (
-      <div>
-         <div>Hero</div>
+      <>
+         <Hero />
          <Products />
          <div>Footer</div>
-      </div>
+      </>
    )
 }
 
