@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+
 import { API_URL } from '../../config';
 import basketCart from '../../img/basket-cart-icon.png'
 
@@ -9,8 +10,6 @@ const Product = () => {
    const [product, setProduct] = useState(null);
    const [count, setCount] = useState(0);
    const [sum, setSum] = useState(0)
-
-
 
    useEffect(() => {
       fetch(`${API_URL}/products/${id}`)
@@ -27,7 +26,6 @@ const Product = () => {
       setSum((count + 1) * price)
    }
 
-
    return (
       <div className='product-info'>
          <div className='product-description-wrapper'>
@@ -38,20 +36,15 @@ const Product = () => {
 
          <div className='product-ordered-wrapper'>
             <span className='product-price'>&euro; {product.price}</span>
-            {/* <Link onClick={counterHandler} to='/order'> */}
 
             <button className='btn' onClick={() => counterHandler(product.price)}>
                <img style={{ width: 25, height: 25 }} src={basketCart} alt="basket cart" />
                Add to cart
                <span className='counter'>{count}</span>
-
             </button>
 
             <span className='sum'>Total sum: {sum} &euro;</span>
-
-            {/* </Link> */}
          </div>
-
       </div>
    )
 }

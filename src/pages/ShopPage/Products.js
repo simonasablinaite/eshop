@@ -39,7 +39,6 @@ const Products = () => {
             </div>
           </Link></li>
         )}
-
       </ul>
     </div>
   )

@@ -1,7 +1,7 @@
 @media(min-width: 768px) {
    .header .nav-container .navigation a {
       font-size: 25px;
-            }
+   }
    .shop-list .product-card{
          display: grid;
          grid-template-columns: repeat(2, 1fr);
@@ -15,16 +15,16 @@
 
    @media(min-width: 992px) {
       .header .nav-container .navigation a {
-font-size: 30px;
-      }
+      font-size: 30px;
+   }
       .shop-list .product-card{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 10px; 
-      } 
+   } 
       .hero .element-wrapper > p {
          font-size: 45px;
          line-height: 55px;
-        }
+   }
     
-      }
+}

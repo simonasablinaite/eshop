@@ -2,25 +2,24 @@
 
 .header {
   width: 100%;
- background-color: #f1717a;
- padding: variables.$p-20;
+  background-color: #f1717a;
+  padding: variables.$p-20;
 
- .nav-container {
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
+    .nav-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
 
-   .logo-wrapper {
+    .logo-wrapper {
       display: flex;
       color: variables.$main-text;
       flex-direction: column;
       text-align: center;
    }
-   .navigation {
-      display: flex;
-      gap: 20px;
+       .navigation {
+          display: flex;
+          gap: 20px;
 
-    
     a {
       color: variables.$main-text;
       text-decoration: none;
@@ -28,6 +27,5 @@
       font-weight: 600;
     }
    }
- 
  }
 }
