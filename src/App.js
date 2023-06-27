@@ -9,6 +9,7 @@ import logo from './img/logo-2.png'
 function App() {
   return (
 
+<<<<<<< HEAD
     <div className="container">
       <header className='header'>
         <div className='nav-container'>
@@ -41,6 +42,9 @@ function App() {
 
       </Routes>
 
+=======
+      <h1>Lets GET started!</h1>
+>>>>>>> db59fc235f28c3b5426fdf48cb82b5a517ad2ba1
     </div>
   );
 

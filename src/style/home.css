@@ -117,8 +117,8 @@ body * {
   font-size: 20px;
 }
 
-@media (max-width: 732px) {
-  .product-img {
-    width: 20px;
+@media (max-width: 768px) {
+  .product-card {
+    display: flex;
   }
 }/*# sourceMappingURL=home.css.map */
