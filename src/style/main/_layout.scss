@@ -1,10 +1,14 @@
 @media(min-width: 768px) {
+  
    .shop-list .product-card{
          display: grid;
          grid-template-columns: repeat(2, 1fr);
          gap: 10px; 
    } 
-     
+     .hero .element-wrapper > p {
+      font-size: 25px;
+      line-height: 40px;
+     }
    }
 
    @media(min-width: 992px) {
@@ -13,5 +17,9 @@
             grid-template-columns: repeat(3, 1fr);
             gap: 10px; 
       } 
-        
+      .hero .element-wrapper > p {
+         font-size: 45px;
+         line-height: 55px;
+        }
+    
       }
