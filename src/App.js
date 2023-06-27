@@ -1,6 +1,6 @@
 import { Routes, Route, NavLink } from 'react-router-dom';
-import Products from './pages/ShopPage/Products';
 
+import Products from './pages/ShopPage/Products';
 import HomePage from './pages/HomePage/HomePage';
 import Product from './pages/ShopPage/Product';
 import OrderPage from './pages/ShopPage/OrderPage';
@@ -13,7 +13,6 @@ function App() {
         <div className='nav-container'>
           <nav className='navigation'>
             <NavLink className='nav-item' to='/'>Home Page</NavLink>
-
           </nav>
 
           <div className='logo-wrapper'>
@@ -24,10 +23,9 @@ function App() {
 
           <nav className='navigation'>
             <NavLink className='nav-item' to='/products'>Shop</NavLink>
-
             <NavLink className='nav-item' to='/order'>Order</NavLink>
-
           </nav>
+
         </div>
       </header >
 
@@ -39,8 +37,6 @@ function App() {
         <Route path='/order' element={<OrderPage />} />
 
       </Routes>
-
-
     </div>
   );
 
