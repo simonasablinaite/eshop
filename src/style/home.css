@@ -47,6 +47,10 @@ body * {
 }
 .shop-list .product-card li a {
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 .shop-list .product-card li a .product-title {
   color: black;
@@ -58,13 +62,14 @@ body * {
 }
 .shop-list .product-card li .purchase {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   margin-top: 20px;
 }
 .shop-list .product-card li .purchase .price {
   color: black;
   font-size: 20px;
   font-weight: 600;
+  margin-right: 30px;
 }
 
 .product-info {
@@ -95,4 +100,12 @@ body * {
   padding: 5px;
   font-size: 15px;
   font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .shop-list .product-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
 }/*# sourceMappingURL=home.css.map */
