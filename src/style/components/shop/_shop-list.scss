@@ -1,10 +1,13 @@
+@use '../../main/layout';
 .shop-list {
    padding: 20px;
-   display: flex;
-   flex-direction: column;
+
    
    .product-card {
+      display: flex;
+      flex-direction: column;
       list-style-type: none;
+      width: 250px;
    
       li {
          border: 1px solid grey;

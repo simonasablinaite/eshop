@@ -36,7 +36,10 @@ body * {
   padding: 20px;
 }
 .shop-list .product-card {
+  display: flex;
+  flex-direction: column;
   list-style-type: none;
+  width: 250px;
 }
 .shop-list .product-card li {
   border: 1px solid grey;
@@ -115,10 +118,4 @@ body * {
 }
 .product-info .sum {
   font-size: 20px;
-}
-
-@media (max-width: 768px) {
-  .product-card {
-    display: flex;
-  }
 }/*# sourceMappingURL=home.css.map */

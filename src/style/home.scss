@@ -1,7 +1,7 @@
 @use './main/reset';
 @use './main/_variables.scss';
 @use './main/base';
-
+@use './main/layout';
 
 // components
 @use './components/home-page/header';
@@ -10,4 +10,3 @@
 @use './components/shop/product';
 
 
-@use './main/layout';
