@@ -6,3 +6,12 @@
    } 
      
    }
+
+   @media(min-width: 992px) {
+      .shop-list .product-card{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px; 
+      } 
+        
+      }
