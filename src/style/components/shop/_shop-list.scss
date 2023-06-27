@@ -1,5 +1,7 @@
 .shop-list {
    padding: 20px;
+   display: flex;
+   flex-direction: column;
    
    .product-card {
       list-style-type: none;
