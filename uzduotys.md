@@ -29,3 +29,9 @@ ADMIN:
 3. Galeti istrinti sukurta preke (adminas pazymi, kad sita preke prekiauti nebegalima, jei vartotojas ja isigijo.)
 
 STILIUS!
+
+DUOMENYS:
+
+- papildyti products sarasa kiekiu (product count) (kiek vienetu tos prekes yra) JSON serve.
+- Galeti atvaizduoti prekiu kieki produktu sarase, eshop puslapyje
+- Galeti keisti duomenis atitininkamai nuo nupirktu prekiu kiekio (mupirkus preke, product count turi sumazeti tiek vienetu, kiek buvo nupirkta)
