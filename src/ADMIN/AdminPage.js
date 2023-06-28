@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { API_URL } from '../config';
+import CreateProduct from './CREATE/CreateProduct';
 // import { Link } from 'react-router-dom'
 import DeleteProduct from './DELETE/DeleteProduct'
 
@@ -15,20 +16,24 @@ const AdminPage = () => {
 
    return (
       <>
-         <div className='products-list'>
+         <div className='products-list-wrapper'>
             <h1>Products list:</h1>
 
-            <ul>
-               {products.map(item => <li key={item.id}>
-                  <img style={{ width: 100, height: 120 }} src={item.photoURL} alt="product" />
-                  <h2> {item.title}</h2>
-                  <h2>{item.price}</h2>
-               </li>)}
-            </ul>
+            <div className='products-list'>
+               <ul className='list-items'>
+                  {products.map(item => <li key={item.id}>
+                     <img style={{ width: 100, height: 120 }} src={item.photoURL} alt="product" />
+                     <h2> {item.title}</h2>
+                     <h2>{item.price}</h2>
+                     <DeleteProduct />
+                  </li>)}
+               </ul>
+            </div>
          </div>
-         <div>
+         <div className='created-wrapper'>
             {/* <Link to='/products-list'>Go to products list</Link> */}  {/*variantui su linkais*/}
-            <DeleteProduct />
+
+            <CreateProduct />
          </div>
       </>
    )
