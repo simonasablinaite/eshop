@@ -30,7 +30,7 @@ const DeleteProduct = ({ product, productTitle, productPrice, productPic }) => {
                </>
             )
          )}
-         <button onClick={deleteHandler}>Delete</button>
+         <button className='btn del' onClick={deleteHandler}>Delete</button>
       </div>
    )
 }

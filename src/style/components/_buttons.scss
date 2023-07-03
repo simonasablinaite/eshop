@@ -1,0 +1,22 @@
+.btn {
+   padding: 10px 15px;
+   border: none;
+   border-radius: 5px;
+   color: white;
+
+   &.del {
+      background: rgb(55,17,17);
+      background: linear-gradient(90deg, rgba(55,17,17,1) 0%, rgba(253,29,29,1) 50%, rgba(78,24,24,1) 100%);
+   }
+
+   &.create-add {
+      background: rgb(20,65,22);
+background: linear-gradient(90deg, rgba(20,65,22,1) 0%, rgba(29,253,95,1) 50%, rgba(20,65,22,1) 100%);
+}
+&.read{
+   background: rgb(33,44,92);
+background: linear-gradient(90deg, rgba(33,44,92,1) 0%, rgba(29,205,253,1) 50%, rgba(33,44,92,1) 100%);
+}
+  
+}
+

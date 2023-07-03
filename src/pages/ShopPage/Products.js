@@ -32,7 +32,7 @@ const Products = () => {
 
               <div className='ordered'>
 
-                <button className='btn'>
+                <button className='btn read'>
                   <img style={{ width: 25, height: 25 }} src={basketCart} alt="basket-cart" />
                   Read more</button>
               </div>

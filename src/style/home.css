@@ -175,6 +175,34 @@ body * {
   font-weight: 600;
   font-size: 18px;
 }
+.created-wrapper form .form-control input {
+  border: 1px solid grey;
+}
+.created-wrapper form .form-control textarea {
+  border: 1px solid grey;
+}
+.created-wrapper form .form-control select {
+  border: 1px solid grey;
+}
+
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+.btn.del {
+  background: rgb(55, 17, 17);
+  background: linear-gradient(90deg, rgb(55, 17, 17) 0%, rgb(253, 29, 29) 50%, rgb(78, 24, 24) 100%);
+}
+.btn.create-add {
+  background: rgb(20, 65, 22);
+  background: linear-gradient(90deg, rgb(20, 65, 22) 0%, rgb(29, 253, 95) 50%, rgb(20, 65, 22) 100%);
+}
+.btn.read {
+  background: rgb(33, 44, 92);
+  background: linear-gradient(90deg, rgb(33, 44, 92) 0%, rgb(29, 205, 253) 50%, rgb(33, 44, 92) 100%);
+}
 
 @media (min-width: 768px) {
   .header .nav-container .navigation a {

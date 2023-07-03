@@ -37,7 +37,7 @@ const Product = () => {
          <div className='product-ordered-wrapper'>
             <span className='product-price'>&euro; {product.price}</span>
 
-            <button className='btn' onClick={() => counterHandler(product.price)}>
+            <button className='btn create-add' onClick={() => counterHandler(product.price)}>
                <img style={{ width: 25, height: 25 }} src={basketCart} alt="basket cart" />
                Add to cart
                <span className='counter'>{count}</span>

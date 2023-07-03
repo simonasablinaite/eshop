@@ -86,7 +86,7 @@ const CreateProduct = () => {
 
          </div>
 
-         <button type='submit'>Create</button>
+         <button className='btn create-add' type='submit'>Create</button>
       </form>
    )
 }
