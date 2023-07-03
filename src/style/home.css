@@ -134,20 +134,46 @@ body * {
   margin-left: 30px;
 }
 
-.products-list-wrapper .products-list {
-  margin-top: 30px;
-}
-.products-list-wrapper .products-list .list-items {
+.products-list-wrapper {
   display: flex;
   flex-direction: column;
-  list-style: none;
+  margin-top: 30px;
+}
+.products-list-wrapper .products-list {
+  margin-top: 30px;
+  padding: 30px;
+  display: flex;
+}
+.products-list-wrapper .products-list .list-items {
+  gap: 20px;
 }
 .products-list-wrapper .products-list .list-items li {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  align-items: center;
+  list-style: none;
+}
+.products-list-wrapper .products-list .list-items li div {
+  width: calc(100% - 30px);
+  display: flex;
   justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+}
+
+.created-wrapper h3 {
+  font-size: 25px;
+}
+.created-wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+}
+.created-wrapper form .form-control {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.created-wrapper form .form-control label {
+  font-weight: 600;
+  font-size: 18px;
 }
 
 @media (min-width: 768px) {

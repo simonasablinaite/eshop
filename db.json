@@ -41,13 +41,47 @@
       "body": "The Expression of Love is wrapped with different shades of pink and red roses. It is the best way to express your admiration and appreciation. Extend your heartfelt gratitude and thankfulness to your loved ones with this bouquet.",
       "price": 170,
       "photoURL": "https://cdn.shopify.com/s/files/1/2601/3352/products/99Roses-ExpressionofLove_001_493x.jpg?v=1626848478"
+    },
+    {
+      "title": "Triple Wonder",
+      "body": "There is beauty in simplicity, and our Triple Wonder arrangement is proof of that statement. In it, we feature the lovable blooms in timeless pinks and champagne for a gift that will never go wrong. This is the perfect bouquet for those who prefer the classics with a touch of modernity.",
+      "price": "15",
+      "photoURL": "https://cdn.shopify.com/s/files/1/2601/3352/products/BR_06_2_493x.jpg?v=1635434272",
+      "id": 31
+    },
+    {
+      "title": "So Sunny Bouquet",
+      "body": "This stylish arrangement includes 7 fresh sunflowers which is perfect gift for a graduation or a birthday. The bouquet is wrapped in luxurious paper arranged by our experienced florist.",
+      "price": "30",
+      "photoURL": "https://cdn.shopify.com/s/files/1/2601/3352/products/DSC_0086_493x.JPG?v=1573805003",
+      "id": 32
     }
   ],
-  "posts": [
+  "species": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "title": "roses",
+      "bouquets": []
+    },
+    {
+      "id": 2,
+      "title": "tulips",
+      "bouquets": []
+    },
+    {
+      "id": 3,
+      "title": "lilies",
+      "bouquets": []
+    },
+    {
+      "id": 4,
+      "title": "orchids",
+      "bouquets": []
+    },
+    {
+      "id": 5,
+      "title": "carnations",
+      "bouquets": []
     }
   ],
   "comments": [

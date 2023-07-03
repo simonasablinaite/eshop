@@ -1,0 +1,51 @@
+@use '../main/variables';
+
+.products-list-wrapper {
+   display: flex;
+   flex-direction: column;
+   margin-top: 30px;
+   
+   .products-list {
+    margin-top: 30px;
+    padding: 30px;
+    display: flex;
+ 
+      .list-items {
+        gap: 20px;
+      li {
+         list-style: none;
+      div {
+         width: calc(100% - 30px);
+         display: flex;
+         justify-content: space-between;
+         gap: 30px;
+         align-items: center;
+      
+      }
+   }
+        
+}
+   }
+}
+
+.created-wrapper {
+   h3 {
+      font-size: 25px;
+   }
+ form {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   padding: 30px;
+
+   .form-control {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+
+label{
+   font-weight: 600;
+   font-size: 18px;
+}
+   }
+ }
+}
