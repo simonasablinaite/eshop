@@ -21,25 +21,14 @@ const CreateProduct = () => {
 
    const newProductHandler = (event) => {
       event.preventDefault();
-      console.log(photo);
-      console.log(title);
-      console.log(description);
-      console.log(price);
 
-      fetch(`${API_URL}/products`, {
-         method: 'POST',
-         body: JSON.stringify({
-            title,
-            body: description,
-            price,
-            photoURL: photo
-         }),
-         headers: {
-            'Content-type': 'application/json; charset=UTF-8',
-         },
+      axios.post(`${API_URL}/products`, {
+
+         photoURL: photo,
+         title,
+         body: description,
+         price
       })
-         .then((response) => response.json())
-         .then((json) => console.log(json))
    }
 
    const photoHandler = event => setPhoto(event.target.value);
@@ -58,7 +47,6 @@ const CreateProduct = () => {
                value={photo}
                onChange={photoHandler}
             />
-
          </div>
 
          <div className='form-control'>
@@ -78,7 +66,7 @@ const CreateProduct = () => {
 
          <div className='form-control'>
             <label htmlFor="">Select species:</label>
-            <select name="species" id="species" value={species} onChange={speciesHandler}>Select species"
+            <select name="species" id="species" value={false} onChange={speciesHandler}>Select species"
                {species.map(specie => (
                   <option key={specie.id} value={specie.id}>{specie.title}</option>
                ))}

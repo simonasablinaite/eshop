@@ -11,16 +11,13 @@
     display: flex;
  
       .list-items {
-        gap: 20px;
       li {
          list-style: none;
       div {
-         width: calc(100% - 30px);
-         display: flex;
-         justify-content: space-between;
+       display: grid;
+       grid-template-columns: repeat(5, 1fr);
          gap: 30px;
-         align-items: center;
-      
+      align-items: center;
       }
    }
         

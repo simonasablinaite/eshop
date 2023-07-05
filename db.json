@@ -57,25 +57,18 @@
       "id": 32
     },
     {
-      "title": "",
-      "body": "",
-      "price": "",
-      "photoURL": "",
-      "id": 33
+      "photoURL": "https://assets.flowerstore.ph/public/tenantPH/app/assets/images/variant/400_GowDRRYmFR9iI44oQzz738eBn.jpg",
+      "title": "Angela",
+      "body": "This beautiful bouquet is made up of roses, gerberas and carnations. Perfect for Valentine's day or to celebrate other special occasions. ",
+      "price": "80",
+      "id": 37
     },
     {
-      "title": "",
-      "body": "",
-      "price": "",
-      "photoURL": "",
-      "id": 34
-    },
-    {
-      "title": "",
-      "body": "",
-      "price": "",
-      "photoURL": "",
-      "id": 35
+      "photoURL": "https://cdn.shopify.com/s/files/1/2601/3352/products/Sweetheart_001_493x.jpg?v=1626848116",
+      "title": "Sweetheart",
+      "body": "The Sweetheart Bouquet impresses with lush red roses, fine baby breath and white lilies. Sure to please that someone special this combination of premium flowers comes with lavish wrapping and a nice ribbon.",
+      "price": "75",
+      "id": 38
     }
   ],
   "species": [

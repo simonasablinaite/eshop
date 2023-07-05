@@ -8,6 +8,8 @@ import logo from './img/logo-2.png'
 import AdminPage from './ADMIN/AdminPage';
 import DeleteProduct from './ADMIN/DELETE/DeleteProduct';
 import CreateProduct from './ADMIN/CREATE/CreateProduct';
+import EditingForm from './ADMIN/EDIT/EditingForm';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
@@ -42,8 +44,22 @@ function App() {
         <Route path='/admin' element={<AdminPage />} />
         <Route path='/products-list' element={<DeleteProduct />} />
         <Route path='/products-list' element={<CreateProduct />} />
+        <Route path='/editing-form' element={<EditingForm />} />
 
       </Routes>
+
+      <ToastContainer
+        position="top-right"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
     </div>
   );
 

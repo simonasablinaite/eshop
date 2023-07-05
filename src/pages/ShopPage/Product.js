@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-
+import { toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 import { API_URL } from '../../config';
 import basketCart from '../../img/basket-cart-icon.png'
 
@@ -23,7 +24,8 @@ const Product = () => {
 
    const counterHandler = (price) => {
       setCount(count + 1);
-      setSum((count + 1) * price)
+      setSum((count + 1) * price);
+      toast.success('Product added successfully!');
    }
 
    return (

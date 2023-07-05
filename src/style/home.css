@@ -144,16 +144,12 @@ body * {
   padding: 30px;
   display: flex;
 }
-.products-list-wrapper .products-list .list-items {
-  gap: 20px;
-}
 .products-list-wrapper .products-list .list-items li {
   list-style: none;
 }
 .products-list-wrapper .products-list .list-items li div {
-  width: calc(100% - 30px);
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   gap: 30px;
   align-items: center;
 }

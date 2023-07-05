@@ -1,25 +1,39 @@
-import { useState } from 'react';
-import { Link, useParams } from 'react-router-dom'
+import { useState, useEffect } from 'react';
+import { Link, useParams } from 'react-router-dom';
 import { API_URL } from '../../config';
+import EditProduct from '../EDIT/EditProduct';
 
-const DeleteProduct = ({ product, productTitle, productPrice, productPic }) => {
+const DeleteProduct = ({ productTitle, productPrice, productPic }) => {
    const { id } = useParams();
 
    const [deletedProduct, setDeletesProduct] = useState(false);
-   // const [product, setProduct] = useState('');
+   const [product, setProduct] = useState(null);
+
+   useEffect(() => {
+      fetch(`${API_URL}/products`)
+         .then(res => res.json())
+         .then(data => setProduct(data))
+   }, [id])
 
    const deleteHandler = () => {
-      fetch(`${API_URL}/products/${id}`, { method: "DELETE" })
+      fetch(`${API_URL}/products/${id}`, {
+         method: 'DELETE',
+      })
          .then(res => res.json())
-         .then(productsData => setDeletesProduct(true))
+         .then(data => setDeletesProduct(true))
+   }
+
+
+   if (!product) {
+      return '';
    }
 
    return (
-      <div className=''>
+      <div>
          {deletedProduct ? (
             <>
-               <h1>Post was deleted</h1>
-               <Link to='/products'>Go back to products list</Link><br />
+               <h1>Product was deleted</h1>
+               {/* <Link to='/products'>Go back to products list</Link><br /> */}
             </>
          ) : (
             product && (
@@ -31,6 +45,7 @@ const DeleteProduct = ({ product, productTitle, productPrice, productPic }) => {
             )
          )}
          <button className='btn del' onClick={deleteHandler}>Delete</button>
+         <EditProduct />
       </div>
    )
 }
